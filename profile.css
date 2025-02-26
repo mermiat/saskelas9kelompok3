@@ -1,0 +1,69 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.header{
+    width: 1280px;
+    position: fixed;
+}
+
+.home-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.profile-card {
+    width: 160px;
+    height: 160px;
+    background-color: #fff;
+    padding: 10px; /* Reduced padding to ensure the image fills the circle */
+    border-radius: 50%;
+    box-shadow: -5px 8px 45px rgba(51, 51, 51, 0.126);
+    transition: all 0.4s;
+    overflow: hidden;
+    position: relative; /* Added to contain child elements */
+}
+
+.profile-card:hover {
+    border-radius: 10px;
+    height: 230px;
+}
+
+.profile-card .img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%; /* Ensure the image container is circular */
+    overflow: hidden; /* Prevent image overflow */
+}
+
+.profile-card .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the entire circle */
+    border-radius: 50%; /* Keep the image circular */
+    transition: all 0.4s;
+}
+
+.profile-card:hover .img img {
+    border-radius: 10px; /* Change to square on hover */
+    transform: translateY(-70px);
+}
+
+.caption {
+    text-align: center;
+    transform: translateY(-90px);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.5s;
+}
+
+.profile-card:hover .caption {
+    opacity: 1;
+    pointer-events: all;
+}
