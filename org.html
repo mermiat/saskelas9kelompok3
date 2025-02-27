@@ -1,91 +1,128 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <tittle>ORGANISASI PEDULI LINGKUNGAN</tittle>
-    </head>
-    <body>
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        background: #f9f9f9;
-    }
-    .container {
-        width: 80%;
-        margin: auto;
-        padding: 20px 0;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .image-box {
-        width: 60%;
-        background: white;
-        padding: 20px;
-        border-radius: 5px;
-        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-        text-align: center;
-    }
-    .image-box img {
-        width: 100%;
-        border-radius: 5px;
-    }
-    .side-card {
-        width: 35%;
-        background: white;
-        padding: 20px;
-        border-radius: 5px;
-        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-        transition: transform 0.3s, box-shadow 0.3s;
-    }
-    .side-card:hover {
-        transform: scale(1.05);
-        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    }
-</style>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organisasi</title>
+    <link rel="stylesheet" href="org.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            box-sizing: border-box;
+            background: url('8e1a40df89eedc9219f6da0506701c97.gif') no-repeat center center/cover;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .image-box {
+            width: 60%;
+            background: #a2b7b0;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .image-box img {
+            width: 100%;
+            border-radius: 5px;
+        }
+        .side-card {
+            width: 35%;
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .side-card:hover {
+            transform: scale(1.13);
+            box-shadow: 0px 10px 8px rgba(0, 0, 0, 0.2);
+        }
+        .button-container {
+            text-align: ceter;
+            margin-right: 40px;
+            margin-top: 250px;
+        }
+        .button-container button {
+            padding: 100px 15px;
+            border-radius: 50%;
+            font-size: 25px;
+            border: none;
+            border-radius: 100px;
+            background:moccasin;
+            color:olivedrab;
+            cursor: pointer;
+            transition: background 0.3s;
+            margin: 5px;
+        }
+        .button-container button:hover {
+            background: #9B9E56;
+        }
+        @font-face {
+            font-family: 'Sotizen';
+            src: url(Softizen.ttf);
+        }
+        .description {
+            font-family: 'Sotizen';
+        }
+    </style>
+    <script>
+        let currentIndex = 0;
+        const images = [
+            "brian-earth-hour-surabaya-2024.webp",
+            "climate-class-YFCC.png",
+            "Tanam mangrove _Hana nuraliyya W.jpg"
+        ];
+        const texts = [
+            "EARTH HOUR SURABAYA",
+            "CLIMATE CLASS YFCC (INDONESIA)",
+            "WWF-INDONESIA"
+        ];
+        const sideCards = [
+            "Earth Hour adalah salah satu kampanye untuk menyatakan kepedulian kita terhadap perubahan iklim dengan cara mematikan lampu dan peralatan elektronik yang sedang tidak dipakai selama 1 jam (20.30 – 21.30 waktu setempat) pada setiap hari Sabtu di minggu terakhir di bulan Maret setiap tahunnya",
+            "Youth for Climate Change (YFCC) Indonesia merupakan organisasi pemuda tingkat nasional yang bergerak dalam upaya adaptasi dan mitigasi perubahan iklim. Anggota YFCC Indonesia adalah para pemuda di seluruh Indonesia dengan rentang usia 17 hingga 30 tahun. Dalam pergerakannya YFCC Indonesia menitikberatkan pada edukasi untuk menumbuhkan kesadaran dalam melakukan upaya adaptasi dan mitigasi bencana perubahan iklim yang dimulai dari pola dan gaya hidup sehari-hari",
+            "WWF-Indonesia adalah organisasi konservasi independen yang terpercaya yang didirikan berdasarkan pemahaman tentang hubungan yang kompleks antara aktivitas manusia dan alam, dengan fokus pada pencarian solusi yang dapat diterapkan dan memobilisasi aksi dari para pemangku kepentingan dan pendukung."
+        ];
+        function nextContent() {
+            currentIndex = (currentIndex + 1) % images.length;
+            updateContent();
+        }
+        function prevContent() {
+            currentIndex = (currentIndex - 1 + images.length) % images.length;
+            updateContent();
+        }
+        function updateContent() {
+            document.getElementById("image").src = images[currentIndex];
+            document.getElementById("description").innerText = texts[currentIndex];
+            document.getElementById("side-card-text").innerText = sideCards[currentIndex];
+        }
+    </script>
 </head>
 <body>
-<div class="container">
-    <div class="image-box">
-        <img src="https://via.placeholder.com/600x400" alt="Sample Image">
-        <p>Deskripsi gambar yang menarik.</p>
+    <div class="container">
+        <div class="image-box">
+            <img id="image" src="Tanam mangrove _Hana nuraliyya W.jpg" alt="Sample Image">
+            <p id="description" class="description">World Wildlife Fund (WWF) Indonesia.</p>
+        </div>
+        <div class="side-card">
+            <h3>Informasi</h3>
+            <p id="side-card-text">"WWF-Indonesia adalah organisasi konservasi independen yang terpercaya yang didirikan berdasarkan pemahaman tentang hubungan yang kompleks antara aktivitas manusia dan alam, dengan fokus pada pencarian solusi yang dapat diterapkan dan memobilisasi aksi dari para pemangku kepentingan dan pendukung."
+                </p>
+        </div>
     </div>
-    <div class="side-card">
-        <h3>Informasi Tambahan</h3>
-        <p>Ini adalah kartu samping yang berisi informasi tambahan terkait gambar.</p>
+    <div class="button-container">
+        <button onclick="prevContent()"><</button>
+        <button onclick="nextContent()">></button>
     </div>
-</div>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    </body>
+</body>
 </html>
