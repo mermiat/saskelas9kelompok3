@@ -8,6 +8,14 @@
 .header{
     width: 1280px;
     position: fixed;
+    z-index: 1000;
+}
+
+.title {
+    width: 100vw;
+    padding-top: 280px;
+    height: auto;
+    padding-bottom: 40px;
 }
 
 .home-container {
@@ -76,6 +84,7 @@ body{
             padding: 0;
             height: 100vh;
             display: flex;
+            flex-wrap: wrap;
             justify-content: center;
             box-sizing: border-box;
     background: url('8e1a40df89eedc9219f6da0506701c97.gif') no-repeat center center/cover;
