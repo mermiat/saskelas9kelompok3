@@ -1,0 +1,98 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    /* align-items: center; */
+}
+
+.header{
+    width: 1280px;
+    position: fixed;
+    z-index: 1000;
+}
+
+.title {
+    width: 100vw;
+    padding-top: 280px;
+    height: auto;
+    padding-bottom: 40px;
+}
+
+.home-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 40px;
+    align-items: first baseline;
+    /* flex-direction: row; */
+}
+
+.profile-card {
+    width: 160px;
+    height: 160px;
+    background-color: #fff;
+    padding: 10px; /* Reduced padding to ensure the image fills the circle */
+    border-radius: 50%;
+    box-shadow: -5px 8px 45px rgba(51, 51, 51, 0.126);
+    transition: all 0.4s;
+    overflow: hidden;
+    position: relative; /* Added to contain child elements */
+    /* flex-direction: row; */
+}
+
+.profile-card:hover {
+    border-radius: 10px;
+    height: 230px;
+    /* flex-direction: row; */
+}
+
+.profile-card .img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%; /* Ensure the image container is circular */
+    overflow: hidden; /* Prevent image overflow */
+    /* flex-direction: row; */
+}
+
+.profile-card .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the entire circle */
+    border-radius: 50%; /* Keep the image circular */
+    transition: all 0.4s;
+    /* flex-direction: row; */
+}
+
+.profile-card:hover .img img {
+    border-radius: 10px; /* Change to square on hover */
+    transform: translateY(-70px);
+    /* flex-direction: row; */
+}
+
+.caption {
+    text-align: center;
+    transform: translateY(-90px);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.5s;
+    /* flex-direction: row; */
+}
+
+.profile-card:hover .caption {
+    opacity: 1;
+    pointer-events: all;
+}
+
+body{
+    font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            box-sizing: border-box;
+    background: url('8e1a40df89eedc9219f6da0506701c97.gif') no-repeat center center/cover;
+}
