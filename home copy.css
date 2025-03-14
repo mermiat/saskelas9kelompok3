@@ -6,43 +6,80 @@
 
 .header {
     width: 1280px;
-    position: fixed;
+    /* position: fixed; */
     z-index: 0;
+    height: 200px;
+    margin: 0 auto;
 }
 
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    height: 100vh;
+    /* height: 100vh; */
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
     box-sizing: border-box;
     background: url('8e1a40df89eedc9219f6da0506701c97.gif') no-repeat center center/cover;
+}
+
+.parallax {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/* height: 100vh; */
+	background: url('cover.png') no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+    flex-grow: 1;
 }
 
 .navbar {
     list-style-type: none;
     width: 100vw;
     margin: 0px;
-    margin-top: 200px;
-    height: auto;
+    /* margin-top: 200px; */
+    height: 70px;
     padding: 0px;
     overflow: hidden;
     background-color: green;
     align-items: center;
-    z-index: 10;
+    z-index: 0;
+    display:flex;
+    justify-content:center;
+    position:relative;
+    /* clear: both; */                                              
+    flex-direction:row;
+    top: -20px;
+}
+
+.navbar-submenu {
+    display: none; /* Awalnya tidak ditampilkan */
+    position: absolute; /* Agar tidak mengganggu elemen lain */
+    background: white; /* Warna latar putih */
+    min-width: 200px; /* Lebar minimum */
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2); /* Efek bayangan */
+    border-radius: 5px; /* Membulatkan sudut */
+    overflow: hidden; /* Agar elemen tidak keluar dari batas */
+    z-index: 100; /* Menempatkan elemen di atas elemen lain */
 }
 
 .navbar ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    display:flex;
+    align-items:center;
+    gap:10px;
 }
 
 .navbar li {
     display: inline-block;
     position: relative;
+    white-space: no-wrap;
 }
 
 div a, .sp .navbar-submenu > a {
@@ -54,7 +91,7 @@ div a, .sp .navbar-submenu > a {
     margin-bottom: 8px;
     text-decoration: none; /* Hilangkan garis bawah */
     display: inline-block; /* Supaya sejajar */
-    border-radius: 25px; /* Membuat sudut elemen membulat */
+    border-radius: 10px; /* Membuat sudut elemen membulat */
     transition: all 0.3s ease-in-out; /* Efek animasi saat hover */
     font-weight: bold; /* Teks tebal */
     box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2); /* Efek bayangan */
@@ -70,6 +107,7 @@ div a:hover, .navbar-submenu:hover > a {
     display: block;
     padding: 10px 20px;
     text-decoration: none;
+    transition: all 0.3s ease-in-out;
 }
 
 .navbar .navbar-submenu {
@@ -84,8 +122,8 @@ div a:hover, .navbar-submenu:hover > a {
 }
 
 .a{ 
-    font-family: ;
-    font-size: ;
+    font-family: Arial;
+    font-size: 15px;
     color: brown;
 }
  
@@ -100,6 +138,7 @@ div a:hover, .navbar-submenu:hover > a {
      border-radius: 10px; /* Membulatkan sudut */
      box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.2); /* Efek bayangan */
      margin: 20px; /* Jarak antar elemen */
+     margin-top: 200px;
 }
  
 .contentboxp{
@@ -113,4 +152,25 @@ div a:hover, .navbar-submenu:hover > a {
 /* Gaya untuk bagian konten */
 section {
      padding: 20px; /* Ruang dalam */
+}
+
+/* kode css side bar */
+.column{
+    float: left;
+}
+
+.column.side{
+    margin-top: 170px;
+    width: 20%;
+    background: none;
+    height: 600px;
+    padding: 0px 10px;
+}
+
+.column.middle{
+    margin-top: 170px;
+    width: 60%;
+    background: none;
+    height: 600px;
+    padding: 0px 10px;
 }
