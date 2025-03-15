@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    height: 140vh;
+    background: url('8e1a40df89eedc9219f6da0506701c97.gif') no-repeat center center/cover;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 200px auto 1fr;
+    height: 100vh;
+}
+
+header {
+    background-image: url('Organisasi\ di\ Indonesia.png');
+    background-size: cover;
+    background-position: center;
+}
+
+nav {
+    background-color: #4A7C59; /* Deep green */
+    padding: 15px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+}
+
+nav > ul > li {
+    display: inline-block; /* So we can use text-align to center the element */
+    padding: 6px 15px;
+    position: relative;
+}
+
+nav a {
+    font-size: 1em;
+    color: #ffffff; /* White text for contrast */
+    font-weight: 600;
+    text-decoration: none;
+    margin: 0px;
+    padding: 10px;
+    transition: .5s;
+    display: block;
+}
+
+nav a:hover,
+nav a.active {
+    color: #2E4D38; /* Darker green */
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: #3C5C43; /* Dark forest green */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    min-width: 150px;
+    left: 0;
+}
+
+nav li:hover .submenu {
+    display: block;
+}
+
+nav .submenu a:hover {
+    background-color: #6FA76E; /* Softer green on hover */
+}
+
+main { /* main with 3 columns */
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-gap: 10px;
+    padding: 20px;
+}
+
+main.one-col { /* main with 1 column */
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.sidebar {
+    background-color: none;
+    padding: 10px;
+}
+
+.main-content {
+    background-color: white;
+    padding: 20px;
+    background: linear-gradient(to bottom, #e3ffb3, #77de22); /* Gradient background */
+    border-radius: 10px;
+    box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+}
+
+@font-face {
+    font-family:'Sotizen';
+    src: url(Softizen.ttf);
+}
+
+.main-content-title {
+    text-align: center;
+    font-family: 'Sotizen';
+    font-size: 20px;
+    color: rgb(62, 138, 0);
+}
+
+.main-content-body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-indent: 40px;
+    text-align: justify;
+    padding: 20px;
+}
+
+.main-content-body p {
+    margin-bottom: 1rem;
+}
+
+.contentboxp b{
+    text-align: left;
+    padding-left: 0;
+}
+
+.slideshow-container {
+    display: grid;
+    grid-template-columns: 4fr 4fr 2fr;
+}
+
+#slideshow-image{
+    width:400px;
+    height: 300px;
+}
+
+.slideshow-nav button{
+    padding: 100px 15px;
+    border-radius: 50%;
+    font-size: 25px;
+    border: none;
+    border-radius: 100px;
+    background:lightcyan;
+    color:darkslategrey;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin: 5px;
+}
+
+.slideshow-nav button:hover {
+    background: #9B9E56;
+}

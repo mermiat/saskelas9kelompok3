@@ -1,113 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ORGANISASI PEDULI LINGKUNGAN DUNIA</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            box-sizing: border-box;
-            background: url('792236ced7ec959dd7a0ce7804d3bd47.gif') no-repeat center center/cover;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            padding: 20px 0;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .image-box {
-            width: 60%;
-            background:plum;
-            padding: 20px;
-            border-radius: 5px;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-            text-align: center;
-        }
-        .image-box img {
-            width: 100%;
-            border-radius: 5px;
-        }
-        .side-card {
-            width: 35%;
-            background: white;
-            padding: 20px;
-            border-radius: 5px;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-        .side-card:hover {
-            transform: scale(1.13);
-            box-shadow: 0px 10px 8px rgba(0, 0, 0, 0.2);
-        }
-        .button-container {
-            text-align: ceter;
-            margin-right: 40px;
-            margin-top: 250px;
-        }
-        .button-container button {
-            padding: 100px 15px;
-            border-radius: 50%;
-            font-size: 25px;
-            border: none;
-            border-radius: 100px;
-            background:lightcyan;
-            color:darkslategrey;
-            cursor: pointer;
-            transition: background 0.3s;
-            margin: 5px;
-        }
-        .button-container button:hover {
-            background: #9B9E56;
-        }
-        @font-face {
-            font-family: 'Sotizen';
-            src: url(Softizen.ttf);
-        }
-        .description {
-            font-family: 'Sotizen';
-        }
-    </style>
-    <script>
-        let currentIndex = 0;
-        const images = [
-            "laudato.jpg",
-            "350.org_.jpg",
-            "alinea.id_.jpg"
-        ];
-        const texts = [
-            "Laudato Si’ Movement",
-            "350.org",
-            "Rainforest Action Nature"
-        ];
-        const sideCards = [
-            "Laudato Si’ Movement didirikan pada tahun 2015 sebagai respons terhadap dua peristiwa penting: penerbitan ensiklik “Laudato Si’” oleh Paus Fransiskus dan penandatanganan Perjanjian Iklim Paris. Ensiklik tersebut mengajak gereja dan semua orang untuk menanggapi krisis ekologi dengan serius, sementara Perjanjian Paris menandai kesepakatan global untuk mengatasi darurat iklim. Misi utama Laudato Si’ Movement adalah menginspirasi dan memobilisasi komunitas Katolik dalam upaya merawat lingkungan dan mencapai keadilan iklim dan ekologi. Organisasi ini memiliki tiga tujuan strategis, yaitu konversi ekologis untuk memotivasi umat Katolik agar lebih peduli terhadap ciptaan, keberlanjutan penuh dengan mengurangi dampak lingkungan hingga nol, serta advokasi profetik untuk menyerukan kebijakan berani demi mencapai tujuan iklim global dan mencegah keruntuhan keanekaragaman hayati.",
-            "350.org didirikan pada tahun 2008 oleh sekelompok mahasiswa universitas di Amerika Serikat dan penulis Bill McKibben untuk membangun gerakan iklim global. Nama 350 merujuk pada konsentrasi karbon dioksida yang aman di atmosfer. Sejak aksi pertama yang menghubungkan aktivis dan organisasi di seluruh dunia, 350.orgtelah menjadi kolaborasi global yang berjuang untuk masa depan bebas fosil. Dalam 15 tahun terakhir, mereka telah memobilisasi masyarakat untuk menghadapi ketidakadilan dan menantang sistem ekonomi berbahan bakar fosil, mencapai banyak hal luar biasa seperti mengajak jutaan orang turun ke jalan, menghemat triliunan dolar dari industri bahan bakar fosil, dan menghentikan pembangkit listrik tenaga batu bara, minyak, serta gas fosil.",
-            "Rainforest Action Network (RAN) adalah organisasi nirlaba lingkungan yang berbasis di San Francisco, California, yang terkenal melalui kampanye pada tahun 1987 yang meyakinkan Burger King untuk membatalkan kontrak daging sapi hutan hujan Amerika Tengah. RAN melestarikan hutan, melindungi iklim, dan menjunjung tinggi hak asasi manusia dengan menantang kekuasaan perusahaan dan ketidakadilan sistemik melalui kemitraan garis depan dan kampanye strategis. Organisasi ini berupaya menciptakan dunia yang menghormati hak dan martabat semua komunitas, memiliki hutan yang sehat, iklim yang stabil, serta melindungi keanekaragaman hayati. RAN juga memelopori model kampanye korporat dengan menargetkan perusahaan besar seperti Home Depot, Citicorp, dan Chevron."
-        ];
-        function nextContent() {
-            currentIndex = (currentIndex + 1) % images.length;
-            updateContent();
-        }
-        function prevContent() {
-            currentIndex = (currentIndex - 1 + images.length) % images.length;
-            updateContent();
-        }
-        function updateContent() {
-            document.getElementById("image").src = images[currentIndex];
-            document.getElementById("description").innerText = texts[currentIndex];
-            document.getElementById("side-card-text").innerText = sideCards[currentIndex];
-        }
-    </script>
+    <link rel="stylesheet" href="destin 4.1.css">
 </head>
+
 <body>
     <div class="container">
         <!-- Header Section -->
@@ -130,9 +30,9 @@
                     <a href="#">Isi</a>
                     <ul class="submenu">
                         <li><a href="3.1.html">Pengertian Lingkungan</a></li>
-                        <li><a href="3.1.html">Kondisi Lingkungan di Indonesia</a></li>
+                        <!-- <li><a href="3.1.html">Kondisi Lingkungan di Indonesia</a></li> -->
                         <li><a href="3.3.html">Cara Menunjukan Sikap Peduli Terhadap Lingkungan</a></li>
-                        <li><a href="3.3.html">Sikap yang Harus Dijauhi</a></li>
+                        <!-- <li><a href="3.3.html">Sikap yang Harus Dijauhi</a></li> -->
                     </ul>
                 </li>
                 <li>
@@ -154,22 +54,83 @@
                 <li><a href="7.html">Profile</a></li>
             </ul>
         </nav>
-    
-    <div class="container">
-        <div class="image-box">
-            <img id="image" src="photo-1598335624134-5bceb5de202d-7b473d64fc0c621002d6c621b2a340d9-1d88006596bdafc42eb2649a486d6743_600x400.jpg" alt="Sample Image">
-            <p id="description" class="description">ORGANISASI PEDULI LINGKUNGAN DUNIA</p>
-        </div>
-        <div class="side-card">
-            <h3>Penjelasan</h3>
-            <p id="side-card-text">Organisasi peduli lingkungan dunia didirikan untuk menghadapi krisis lingkungan global yang semakin mengancam kesehatan planet dan kehidupan kita. Tujuan utamanya adalah melestarikan keanekaragaman hayati, melindungi iklim, serta menjunjung tinggi hak asasi manusia dengan menantang kekuasaan perusahaan dan ketidakadilan sistemik. Melalui edukasi, kampanye strategis, dan kemitraan lintas negara, organisasi-organisasi ini berupaya menciptakan dunia yang lebih berkelanjutan, adil, dan sejahtera bagi semua makhluk hidup. Mereka berfungsi sebagai pengawas lingkungan dan advokat perubahan, memobilisasi masyarakat untuk beraksi demi masa depan yang lebih hijau dan aman.
 
-            </p>
-        </div>
-    </div>
-    <div class="button-container">
-        <button onclick="prevContent()"><</button>
-        <button onclick="nextContent()">></button>
+        <!-- Content Section -->
+        <main class="one-col">
+            <section class="main-content">
+                <h1 class="main-content-title">Organisasi Peduli Lingkungan Dunia</h1>
+                <span class="main-content-body">
+                    <script>
+                        let slideshowCurrentIndex = 0;
+                        let slideshowData = [
+                            {
+                                "image": "organisasi.jpg",
+                                "title": "Organisasi",
+                                "description": "Organisasi peduli lingkungan dunia didirikan untuk menghadapi krisis lingkungan global yang semakin mengancam kesehatan planet dan kehidupan kita. Tujuan utamanya adalah melestarikan keanekaragaman hayati, melindungi iklim, serta menjunjung tinggi hak asasi manusia dengan menantang kekuasaan perusahaan dan ketidakadilan sistemik. Melalui edukasi, kampanye strategis, dan kemitraan lintas negara, organisasi-organisasi ini berupaya menciptakan dunia yang lebih berkelanjutan, adil, dan sejahtera bagi semua makhluk hidup. Mereka berfungsi sebagai pengawas lingkungan dan advokat perubahan, memobilisasi masyarakat untuk beraksi demi masa depan yang lebih hijau dan aman."
+                            },
+                            {
+                                "image": "laudatosi.jpeg",
+                                "title": "Laudato Si' Movement",
+                                "description": "Laudato Si’ Movement didirikan pada tahun 2015 sebagai respons terhadap dua peristiwa penting: penerbitan ensiklik “Laudato Si’” oleh Paus Fransiskus dan penandatanganan Perjanjian Iklim Paris. Ensiklik tersebut mengajak gereja dan semua orang untuk menanggapi krisis ekologi dengan serius, sementara Perjanjian Paris menandai kesepakatan global untuk mengatasi darurat iklim. Misi utama Laudato Si’ Movement adalah menginspirasi dan memobilisasi komunitas Katolik dalam upaya merawat lingkungan dan mencapai keadilan iklim dan ekologi. Organisasi ini memiliki tiga tujuan strategis, yaitu konversi ekologis untuk memotivasi umat Katolik agar lebih peduli terhadap ciptaan, keberlanjutan penuh dengan mengurangi dampak lingkungan hingga nol, serta advokasi profetik untuk menyerukan kebijakan berani demi mencapai tujuan iklim global dan mencegah keruntuhan keanekaragaman hayati."
+                            },
+                            {
+                                "image": "RAN.jpg",
+                                "title": "Rainforest Action Network (RAN)",
+                                "description": "Rainforest Action Network (RAN) adalah organisasi nirlaba lingkungan yang berbasis di San Francisco, California, yang terkenal melalui kampanye pada tahun 1987 yang meyakinkan Burger King untuk membatalkan kontrak daging sapi hutan hujan Amerika Tengah. RAN melestarikan hutan, melindungi iklim, dan menjunjung tinggi hak asasi manusia dengan menantang kekuasaan perusahaan dan ketidakadilan sistemik melalui kemitraan garis depan dan kampanye strategis. Organisasi ini berupaya menciptakan dunia yang menghormati hak dan martabat semua komunitas, memiliki hutan yang sehat, iklim yang stabil, serta melindungi keanekaragaman hayati. RAN juga memelopori model kampanye korporat dengan menargetkan perusahaan besar seperti Home Depot, Citicorp, dan Chevron."
+                            },
+                            {
+                                "image": "350.org.png",
+                                "title":"350.org",
+                                "description": "350.org didirikan pada tahun 2008 oleh sekelompok mahasiswa universitas di Amerika Serikat dan penulis Bill McKibben untuk membangun gerakan iklim global. Nama 350 merujuk pada konsentrasi karbon dioksida yang aman di atmosfer. Sejak aksi pertama yang menghubungkan aktivis dan organisasi di seluruh dunia, 350.orgtelah menjadi kolaborasi global yang berjuang untuk masa depan bebas fosil. Dalam 15 tahun terakhir, mereka telah memobilisasi masyarakat untuk menghadapi ketidakadilan dan menantang sistem ekonomi berbahan bakar fosil, mencapai banyak hal luar biasa seperti mengajak jutaan orang turun ke jalan, menghemat triliunan dolar dari industri bahan bakar fosil, dan menghentikan pembangkit listrik tenaga batu bara, minyak, serta gas fosil."
+                            }
+                        ];
+
+                        function slideshowNext() {
+                            slideshowCurrentIndex = (slideshowCurrentIndex + 1) % slideshowData.length;
+                            slideshowUpdateContent();
+                        }
+                        function slideshowPrev() {
+                            slideshowCurrentIndex = (slideshowCurrentIndex - 1 + slideshowData.length) % slideshowData.length;
+                            slideshowUpdateContent();
+                        }
+                        function slideshowUpdateContent() {
+                            document.getElementById("slideshow-image").src = slideshowData[slideshowCurrentIndex].image;
+                            document.getElementById("slideshow-caption-title").innerText = slideshowData[slideshowCurrentIndex].title;
+                            document.getElementById("slideshow-caption-description").innerText = slideshowData[slideshowCurrentIndex].description;
+                        }
+                    </script>
+                    <div class="slideshow-container">
+                        <div class="slideshow-content">
+                            <img id="slideshow-image"
+                                src="photo-1598335624134-5bceb5de202d-7b473d64fc0c621002d6c621b2a340d9-1d88006596bdafc42eb2649a486d6743_600x400.jpg"
+                                alt="Sample Image">
+                            <p id="slideshow-caption-title">asdasdasd</p>
+                        </div>
+                        <div class="slideshow-caption">
+                            <h3>Penjelasan</h3>
+                            <p id="slideshow-caption-description">Organisasi peduli lingkungan dunia didirikan
+                                untuk menghadapi krisis lingkungan global yang semakin mengancam kesehatan planet
+                                dan kehidupan kita. Tujuan utamanya adalah melestarikan keanekaragaman hayati,
+                                melindungi iklim, serta menjunjung tinggi hak asasi manusia dengan menantang
+                                kekuasaan perusahaan dan ketidakadilan sistemik. Melalui edukasi, kampanye
+                                strategis, dan kemitraan lintas negara, organisasi-organisasi ini berupaya
+                                menciptakan dunia yang lebih berkelanjutan, adil, dan sejahtera bagi semua makhluk
+                                hidup. Mereka berfungsi sebagai pengawas lingkungan dan advokat perubahan,
+                                memobilisasi masyarakat untuk beraksi demi masa depan yang lebih hijau dan aman.
+                            </p>
+                        </div>
+                        <div class="slideshow-nav">
+                            <button onClick="slideshowPrev()"><</button>
+                            <button onClick="slideshowNext()">></button>
+                        </div>
+                    </div>
+                    <script>
+                        slideshowUpdateContent();
+                    </script>
+                </span>
+            </section>
+        </main>
     </div>
 </body>
+
 </html>
