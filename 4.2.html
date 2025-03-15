@@ -1,37 +1,174 @@
-<div class="navbar">
-    <ul>
-        <span><li class="sp"><a href="index.html">Home</a><span>
-            <ul class="navbar-submenu">
-                <li><a href="2.1.html" class=>Latar Belakang</a></li>
-                <li><a href="2.1.html">Tujuan</a></li>
-                <li><a href="2.1.html">Manfaat</a></li>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ORGANISASI PEDULI LINGKUNGAN INDONESIA</title>
+    <link rel="stylesheet" href="destin2.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            box-sizing: border-box;
+            background: url('8e1a40df89eedc9219f6da0506701c97.gif') no-repeat center center/cover;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .image-box {
+            width: 60%;
+            background: #a2b7b0;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .image-box img {
+            width: 100%;
+            border-radius: 5px;
+        }
+        .side-card {
+            width: 35%;
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .side-card:hover {
+            transform: scale(1.13);
+            box-shadow: 0px 10px 8px rgba(0, 0, 0, 0.2);
+        }
+        .button-container {
+            text-align: ceter;
+            margin-right: 40px;
+            margin-top: 250px;
+        }
+        .button-container button {
+            padding: 100px 15px;
+            border-radius: 50%;
+            font-size: 25px;
+            border: none;
+            border-radius: 100px;
+            background:moccasin;
+            color:olivedrab;
+            cursor: pointer;
+            transition: background 0.3s;
+            margin: 5px;
+        }
+        .button-container button:hover {
+            background: #9B9E56;
+        }
+        @font-face {
+            font-family: 'Sotizen';
+            src: url(Softizen.ttf);
+        }
+        .description {
+            font-family: 'Sotizen';
+        }
+    </style>
+    <script>
+        let currentIndex = 0;
+        const images = [
+            "brian-earth-hour-surabaya-2024.webp",
+            "climate-class-YFCC.png",
+            "Tanam mangrove _Hana nuraliyya W.jpg"
+        ];
+        const texts = [
+            "EARTH HOUR SURABAYA",
+            "CLIMATE CLASS YFCC (INDONESIA)",
+            "WWF-INDONESIA"
+        ];
+        const sideCards = [
+            "Earth Hour adalah salah satu kampanye untuk menyatakan kepedulian kita terhadap perubahan iklim dengan cara mematikan lampu dan peralatan elektronik yang sedang tidak dipakai selama 1 jam (20.30 – 21.30 waktu setempat) pada setiap hari Sabtu di minggu terakhir di bulan Maret setiap tahunnya",
+            "Youth for Climate Change (YFCC) Indonesia merupakan organisasi pemuda tingkat nasional yang bergerak dalam upaya adaptasi dan mitigasi perubahan iklim. Anggota YFCC Indonesia adalah para pemuda di seluruh Indonesia dengan rentang usia 17 hingga 30 tahun. Dalam pergerakannya YFCC Indonesia menitikberatkan pada edukasi untuk menumbuhkan kesadaran dalam melakukan upaya adaptasi dan mitigasi bencana perubahan iklim yang dimulai dari pola dan gaya hidup sehari-hari",
+            "WWF-Indonesia adalah organisasi konservasi independen yang terpercaya yang didirikan berdasarkan pemahaman tentang hubungan yang kompleks antara aktivitas manusia dan alam, dengan fokus pada pencarian solusi yang dapat diterapkan dan memobilisasi aksi dari para pemangku kepentingan dan pendukung."
+        ];
+        function nextContent() {
+            currentIndex = (currentIndex + 1) % images.length;
+            updateContent();
+        }
+        function prevContent() {
+            currentIndex = (currentIndex - 1 + images.length) % images.length;
+            updateContent();
+        }
+        function updateContent() {
+            document.getElementById("image").src = images[currentIndex];
+            document.getElementById("description").innerText = texts[currentIndex];
+            document.getElementById("side-card-text").innerText = sideCards[currentIndex];
+        }
+    </script>
+</head>
+<body>
+<div class="container1">
+        <!-- Header Section -->
+        <header></header>
+
+
+        <!-- Navigation Section -->
+        <nav>
+            <ul>
+                <!-- <li><a href="index copy.html">Home</a></li> -->
+                <li>
+                    <a href="#">Home</a>
+                    <ul class="submenu">
+                        <li id="konten1"><a href="2.1real.html">Latar Belakang</a></li>
+                        <li id="konten2"><a href="2.2.html">Tujuan</a></li>
+                        <li id="konten3"><a href="2.3.html">Manfaat</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Isi</a>
+                    <ul class="submenu">
+                        <li><a href="3.1.html">Pengertian Lingkungan</a></li>
+                        <li><a href="3.1.html">Kondisi Lingkungan di Indonesia</a></li>
+                        <li><a href="3.3.html">Cara Menunjukan Sikap Peduli Terhadap Lingkungan</a></li>
+                        <li><a href="3.3.html">Sikap yang Harus Dijauhi</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Organisasi Peduli Lingkungan</a>
+                    <ul class="submenu">
+                        <li><a href="4.1.html">Contoh Organisasi di Dunia</a></li>
+                        <li><a href="4.2.html">Contoh Organisasi di Indonesia</a></li>
+                    </ul>
+                </li>
+                <li><a href="5.html">Berita</a></li>
+                <li>
+                    <a href="#">Penutup</a>
+                    <ul class="submenu">
+                        <li><a href="6.3.html">Kesimpulan</a></li>
+                        <li><a href="6.3.html">Galeri</a></li>
+                        <li><a href="6.3.html">Daftar Pustaka</a></li>
+                    </ul>
+                </li>
+                <li><a href="7.html">Profile</a></li>
             </ul>
-        </li>
-        <li class="sp">
-            <a href="#">Isi</a>
-            <ul class="navbar-submenu">
-                <li><a href="3.1.html">Pengertian Lingkungan</a></li>
-                <li><a href="3.2.html">Kondisi Lingkungan di Indonesia</a></li>
-                <li><a href="3.3.html">Cara Menunjukan Sikap Peduli Terhadap Lingkungan</a></li>
-                <li><a href="3.4.html">Sikap yang Harus Dijauhi</a></li>
-            </ul>
-        </li>
-        <li class="sp">
-            <a href="#">Organisasi Peduli Lingkungan</a>
-            <ul class="navbar-submenu">
-                <li><a href="4.1.html">Contoh Organisasi di Dunia</a></li>
-                <li><a href="4.2.html"class="active">Contoh Organisasi di Indonesia</a></li>
-            </ul>
-        </li>
-        <li class="sp"><a href="5.html"class>Berita</a></li>
-        <li class="sp">
-            <a href="#">Penutup</a>
-            <ul class="navbar-submenu">
-                <li><a href="6.3.html">Kesimpulan</a></li>
-                <li><a href="6.3.html">Galeri</a></li>
-                <li><a href="6.3.html">Daftar Pustaka</a></li>
-            </ul>
-        </li>
-        <li class="sp"><a href="7.html">Profile</a></li>
-    </ul>
-</div>
+        </nav>
+    <div class="container">
+        <div class="image-box">
+            <img id="image" src="aksi-pandawara-dengan-membuat-konten-bersih-bersih-sungai-banyak-mendapat-apresiasi-dari-berbagai-kalangan-1_169.jpg" alt="Sample Image">
+            <p id="description" class="description">ORGANISASI PEDULI LINGKUNGAN INDONESIA</p>
+        </div>
+        <div class="side-card">
+            <h3>Penjelasan</h3>
+            <p id="side-card-text">Organisasi peduli lingkungan di Indonesia dibentuk dengan tujuan utama untuk menjaga keseimbangan ekosistem yang semakin terancam oleh berbagai aktivitas manusia. Salah satu alasan utama pendirian organisasi ini adalah meningkatnya tingkat polusi dan kerusakan lingkungan yang berdampak langsung pada kesehatan manusia dan keanekaragaman hayati. Selain itu, organisasi ini juga bertujuan untuk mengedukasi masyarakat tentang pentingnya konservasi sumber daya alam dan bagaimana tindakan kecil bisa memberikan dampak besar dalam melindungi lingkungan. Dengan adanya organisasi peduli lingkungan, diharapkan masyarakat lebih sadar akan pentingnya menjaga lingkungan untuk generasi mendatang, serta mendorong pemerintah dan sektor swasta untuk lebih bertanggung jawab dalam pengelolaan lingkungan. Berikut adalah beberapa contohnya >>
+                </p>
+        </div>
+    </div>
+    <div class="button-container">
+        <button onclick="prevContent()"><</button>
+        <button onclick="nextContent()">></button>
+    </div>
+
+</body>
+</html>
